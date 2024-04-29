@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desert Diggers Utah</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <img class="styled-svg" src="./img/person-digging.svg"/>
+                    <a class="navbar-brand nav-overview-title" href="index.html">Desert Diggers Utah</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link nav-overview-title" href="index.html">Home</a>
+                        </li>
+                        <!-- Dropdown for Services -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-overview-title" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown" id="servicesDropdownMenu">
+                                <!-- Dropdown menu items will be inserted here by JavaScript -->
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item nav-overview-title">
+                            <a class="nav-link" href="#contact-us">About Us</a>
+                        </li>
+                        <li class="nav-item nav-overview-title">
+                            <a class="nav-link" href="#contact-us">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Services Overview Section -->
+    <section class="services-overview py-5">
+        <br><br>
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Text Content -->
+                <div class="col-lg-7">
+                    <h1 class="main-overview-title">Welcome to Desert Diggers</h1>
+                    <h4 class="my-4">Your Ultimate Mining Adventure</h4>
+                    <p>Ever wondered what it's like to mine the rich soils of Utah's West Desert? 
+                        Now's your chance to strike gold – or at least have a blast trying! 
+                        At Desert Diggers, we offer an unforgettable day of mining, complete with heavy-duty equipment that you can operate yourself. 
+                        Whether it’s for a corporate event, a team-building day, or just a fun escape with friends, we guarantee an experience as rich as the ore you’ll unearth.</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="tel:" class="btn btn-primary" style="font-size:24px;">Call Us Now</a>
+                    </div>
+                </div>
+                <!-- Image Placeholder -->
+                <div class="col-lg-5">
+                    <img src="./img/mining-team.png" alt="Service Image" class="img-fluid w-100" style="height: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services py-5 bg-light" style="padding-top:0rem !important">
+        <div class="container">
+            <div class="centered-title">
+                <i class="fas fa-list-check fa-2x"></i> <!-- Adjust the class to match your icon -->
+                <h1 class="mb-4">Choose Your Adventure</h1>
+            </div>
+            <div class="row" id="services-container">
+                <!-- Services will be inserted here by JavaScript - @service-cards.js -->
+            </div>
+            <div class="centered-title" style="padding-top:15px">
+                <h3 class="mb-4">All Packages Include</h3>
+            </div>
+            <div class="centered-title">
+                <ul style="list-style-type: none;font-size:18px">
+                    <li>Hands-on operation of mining equipment like trucks and drills</li>
+                    <li>Safety gear and briefing to keep everyone safe and sound</li>
+                    <li>A change to keep half of your precious finds</li>
+                </ul>
+            </div>
+            <div class="centered-title" style="padding-top:15px">
+                <h3 class="mb-4">So, gear up, get ready to get dirty, and join us at Desert Diggers where adventure meets the wild west.
+                    Book your mining adventure today and let the good times roll!</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Now Section -->
+    <section class="contact-us py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information and Quote -->
+                <div class="col-md-7 mb-4 mb-md-0 text-center text-md-left">
+                    <h1 class="text-uppercase">Contact Us Now</h1>
+                    <h4>"Just like gold, good communication is a precious commodity. That's why we always dig deep to get back to you!"</h4>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="col-md-5" id="contact-us">
+                    <form action="YOUR_SERVER_ENDPOINT" method="POST">
+                        <div class="form-group mb-4">
+                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <textarea class="form-control" name="message" rows="3" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-vOy8VFRjF9fQc6B4nEF4xj6kLzjY9s0w4sxrxvH48bBRoO4jOQ9s8ocwiyg3hw5c" crossorigin="anonymous"></script>
+    <script src="js/service-cards.js"></script>
+    <script src="js/contact-us.js"></script>  
+    <script src="js/drop-down-menu.js"></script>
+    <script src="js/footer.js"></script>
+
+</body>
+</html>
