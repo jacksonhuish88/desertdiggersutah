@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <img class="styled-footer-svg" src="./img/person-digging.svg"/>
                         <h2 class="nav-overview-title ms-2">Dessert Diggers Utah</h2>
                     </div>
-                    <p>Our dedicated crew handles your home and wheels with the tender care of a parent cradling a newborn. From moving to car detailing, we pamper your prized possessions. We aim for a chill vibe only, so leave the stress to the professionals – namely, your in-laws.</p>
+                    <p>Join our dedicated crew at Desert Diggers, where we treat you to the thrill of the dig with the care of an expert jeweler handling precious gems. From operating heavy-duty mining equipment to uncovering treasures buried beneath the desert, we ensure every moment is packed with adventure and safety. We aim to provide an atmosphere as rich as the ore you'll unearth, so leave your worries at the surface and dive deep with professionals who mine fun as well as minerals. Stress is for your day job – down here, we dig good and great times!"</p>
                     <a href="#" class="btn btn-primary">Leave a Review!</a>
                 </div>              
             
